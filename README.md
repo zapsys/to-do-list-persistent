@@ -1,4 +1,11 @@
-# to-do-list-persistent
+# To-Do-List-Persistent
+To-Do-List simples com dados persistentes usando o *LocalStorage*
+
+## Technologies used
+- [Vue 3](https://vuejs.org/guide/introduction.html)
+- [Vite](https://vitejs.dev/)
+- [Vuetify 3](https://vuetifyjs.com/en/getting-started/)
+- Node.js
 
 ## Project setup
 ```
@@ -20,5 +27,6 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Licence
+Este projeto está sob a licença MIT, que permite o download, execução, alteração, redistribuição, tanto para uso privado como comercial do código fonte, desde que citado o autor.
+[MIT License](LICENSE.md)
