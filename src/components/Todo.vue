@@ -88,7 +88,8 @@ export default {
     },
     methods: {
         addTodo() {
-            if (!this.isValidInput()) return alert('Informe uma descrição ou item!')
+            if (this.currentTodo === '') return alert('Informe um item ou descrição!')
+            else if (!this.isValidInput()) return alert('Item ou descrição já inserida!')
             else {
                 this.todos.push({
                     text: this.currentTodo,
@@ -106,10 +107,10 @@ export default {
             this.editedTodo = todo
         },
         delTodo(todo) {
-            this.todos = this.todos.filter(el => el.text !== todo.text);
+            this.todos = this.todos.filter(el => el.text !== todo.text)
         },
         sortTodos() {
-            this.todos.sort((a, b) => a.done - b.done);
+            this.todos.sort((a, b) => a.done - b.done)
         },
         isValidInput() {
             return !(!this.currentTodo.trim() || this.checkIfTodoExists())
